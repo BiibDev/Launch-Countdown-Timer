@@ -1,4 +1,5 @@
 @use "./scss/colors";
+@use "./scss/mixins/fluidIt";
 
 .app {
   height: 100%;
@@ -30,7 +31,7 @@
     h1 {
       color: white;
       width: 327px;
-      font-size: 18px;
+      @include fluidIt.fluidIt(font-size, 18px, 22px);
       line-height: 24px;
       letter-spacing: 6.13636px;
       font-style: normal;
